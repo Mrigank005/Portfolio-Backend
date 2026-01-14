@@ -1,0 +1,114 @@
+### PROFILE_SUMMARY
+Name: Mrigank Singh
+Role: Full Stack AI Developer & Innovator
+Education: B.Tech Computer Science Student at UPES, Dehradun (2024-2028).
+Location: Dehradun, India (Hometown: Kanpur, India).
+CGPA: 7.8/10.0
+Key Highlight: Sophomore student with 3 patents filed. Specializes in building AI-integrated Full Stack Solutions and RAG Chatbots.
+
+### PERSONALITY_AND_BIO
+Background: Born and raised in Kanpur, India.
+Academic Journey: Describes himself as "not always the best student, but always excelled in subjects that interested me."
+Computer Science Origin Story: His journey followed a pattern of deep obsession. When first introduced to CS, he didn't just learn it; he learned C programming in-depth to understand the foundational concepts.
+Hobbies & Interests:
+- Sports: Cricket.
+- Gaming: Enjoys video games like BGMI (Battlegrounds Mobile India) and Call of Duty.
+- Philosophy: "Spend time on many different things, but master the things that interest me most."
+- Tagline: "Together? Let's build something."
+
+### TECHNICAL_SKILLS
+Languages: C, C++, Java, Python, JavaScript, TypeScript.
+AI_ML_Frameworks: OpenAI API, Google Gemini, DeepSeek, LLaMA, LangChain, LangGraph, TensorFlow, PyTorch, Scikit-learn.
+Vector_Databases: Qdrant, RAG implementations.
+Web_Development: React, Next.js, FastAPI, Flask, Node.js, Tailwind CSS, ShadCN UI, Vite.
+Mobile_Development: Flutter, React Native (Expo).
+Cloud_Infrastructure: AWS S3, CloudFront, Docker, CI/CD, Git, Supabase.
+Data_Science: EDA (Exploratory Data Analysis), Anomaly Detection, SHAP (Explainable AI), Plotly, Time Series Analysis.
+
+### LEADERSHIP_AND_EXPERIENCE
+Role: Joint Events Head at UPES ACM-W Student Chapter (2025-2026).
+Internship: Social Impact Intern at Shramik Bharti NGO (Kanpur, June-Aug 2024). Worked on grassroots initiatives for education and skill development.
+Events Organized: Co-convener for Prodigy'25 (Annual Techfest). Involved in organizing ACM India Flagship event "Lady Ada" and AICWiC 2025.
+
+### PROJECT_1: DASES (Descriptive Answer Sheet Evaluation System)
+**Type:** Group Project (Teammates: Konal Puri, Aviral Khanna - Seniors who mentored Mrigank).
+**Mrigank's Specific Contribution:**
+- Developed the **DASES Mobile App** from scratch using React Native & Expo.
+- Contributed to the WebApp Frontend.
+- Assisted in compiling training datasets for the AI models.
+**Project Summary:** An AI-driven system using OCR and LLMs to grade handwritten descriptive answers 90x faster than manual methods with 98% accuracy.
+**Mobile App Technical Details (Built by Mrigank):**
+- **Locked Exam Mode:** Implements a "High Security" environment. Uses `AppState` listeners to detect if a student switches apps. Violations (>15s background time) auto-submit the exam.
+- **Secure Scanning:** Custom camera interface (VisionKit/LMS) that disables gallery uploads, forcing live capture of answer sheets.
+- **Auth:** Custom `SecureStoreAdapter` to bridge Supabase Auth with the device's encrypted Keychain/Keystore.
+**System Impact:**
+- Reduced grading cost from ₹25/sheet (Cloud) to ₹2/sheet (In-house GPU).
+- Processed 400+ sheets with 95% rubric accuracy.
+
+### PROJECT_2: UPES Career Services Platform
+**Type:** Group Project (Teammates: Konal Puri, Aviral Khanna).
+**Mrigank's Specific Contribution:**
+- Developed the **Frontend (WebApp)** using React, Vite, and Tailwind.
+- Designed the **AI System Prompts** (Llama-2/3) for interview question generation.
+- (Note: Backend architecture and core logic were led by Konal & Aviral).
+**Project Summary:** An internship management platform handling Daily Reflective Reports (DRR), attendance, and standardized assessments.
+**Technical Details:**
+- **Attendance:** Interfaces with `navigator.mediaDevices` to capture live camera frames for attendance verification.
+- **AI Assessments:** Uses "Few-Shot Chain-of-Thought" prompts to synthesize a student's daily reports into tailored interview questions.
+- **UX:** Implemented "Mock" async behavior (simulated latency) to polish the loading states and UI feedback loops before backend integration.
+
+### PROJECT_3: MealMatch AI
+**Type:** Solo Project.
+**Status:** Patent Applied.
+**Summary:** Serverless food ordering app that generates meal combos (Main + Drink + Dessert) strictly fitting specific Budget & Calorie limits.
+**Technical "Flex":**
+- **Algorithm:** Uses a "Knapsack-style" optimization algorithm with **Heuristic Pruning**. It pre-sorts items by "efficiency" (calories/price) and stops recursion after finding the top 6 combos to prevent UI freezes.
+- **Architecture:** Client-side only (Serverless). Logic runs entirely in the browser using static TypeScript data.
+- **Constraint System:** Implements a "Compatibility Matrix" to prevent culinary clashes (e.g., prevents suggesting Rice + Pasta together).
+
+### PROJECT_4: JobFit - AI Resume Analyzer
+**Type:** Solo Project.
+**Summary:** An agentic AI pipeline that screens resumes against job descriptions.
+**Technical "Flex":**
+- **Architecture:** Uses **LangGraph** to model the analysis as a State Machine (Extraction -> Analysis -> Profiling -> Compatibility).
+- **Security:** Implements "Direct-to-S3" uploads using AWS Presigned URLs to bypass server bottlenecks.
+- **Handling Hallucinations:** Uses Regex-based JSON extraction (`safe_parse_json`) to clean LLM outputs before rendering.
+- **Scoring:** Uses a Generative Scoring Engine (LLM as Judge) rather than simple vector similarity.
+
+### PROJECT_5: LexiBot - AI Legal Assistant
+**Type:** Solo Project (Patent Applied).
+**Summary:** A Telegram chatbot for Indian legal queries (RAG-based).
+**Technical "Flex":**
+- **Intelligent Chunking:** Does NOT use fixed-size chunks. Uses an LLM + Regex to split documents at semantic boundaries (Articles, Sections) to preserve legal context.
+- **Infrastructure:** Runs Qdrant (Vector DB) in Docker. Uses a `healthcheck` in Docker Compose to ensure the DB is ready before the bot starts.
+- **Memory:** Uses `ConversationBufferWindowMemory` (k=5) to handle follow-up questions ("What is the penalty for *that*?").
+
+### PROJECT_6: F&B Process Anomaly Detection
+**Type:** Solo Project.
+**Summary:** Industrial ML pipeline to detect defects in food batches.
+**Technical "Flex":**
+- **Ensemble Model:** Combines 4 algorithms (Isolation Forest, One-Class SVM, LOF, Autoencoder). A batch is flagged only if ≥2 models agree (Consensus Voting).
+- **Explainability:** Uses **SHAP** (Shapley Additive Explanations) to tell operators exactly *which* sensor (e.g., "Humidity") caused the alarm.
+- **Auto-Thresholding:** The Autoencoder dynamically sets its error threshold based on the 95th percentile of reconstruction error, adapting to new data automatically.
+
+### PROJECT_7: Better LinkedIn (Frontend Architecture)
+**Type:** Solo Project.
+**Summary:** A clean, high-performance redesign of LinkedIn.
+**Technical "Flex":**
+- **Performance:** Uses `react-window` for list virtualization (rendering only visible posts) to handle infinite feeds without lag.
+- **Custom Hooks:** Built `useStickySidebar` to mathematically calculate sticky positioning when CSS `position: sticky` fails in complex layouts.
+
+### PATENTS_DETAILED
+Total Patents Filed: 3 (Indian Patent Office)
+
+[PATENT_1]
+Title: AI-Assisted Terms & Conditions Summarization and Real-Time Compliance Guidance System.
+Innovation: A "Real-Time Guidance Layer" (Browser Extension) that warns users *before* they violate a Terms of Service clause (e.g., "Stop! Mass downloading is banned"). Uses an "Action-Clause Mapper" to link UI events to legal text.
+
+[PATENT_2]
+Title: LexiBot: AI-Powered Legal Assistant.
+Innovation: A "Dynamic Legal Knowledge Graph" specifically for Indian Law. Unlike static bots, it models relationships between statutes (amendments, contradictions) and uses semantic caching to answer repeated queries instantly.
+
+[PATENT_3]
+Title: MealMatch AI.
+Innovation: A "Multi-Constraint Filtering Engine" that solves the "Health vs. Wealth" problem by filtering menus for *both* Calorie Limits and Budget Ceilings simultaneously.
