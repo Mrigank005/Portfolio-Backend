@@ -10,10 +10,10 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# CORS Middleware - Allow all origins for development
+# CORS Middleware 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://mrigank-portfolio-website.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
