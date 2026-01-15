@@ -1,114 +1,117 @@
-### PROFILE_SUMMARY
-Name: Mrigank Singh
-Role: Full Stack AI Developer & Innovator
-Education: B.Tech Computer Science Student at UPES, Dehradun (2024-2028).
-Location: Dehradun, India (Hometown: Kanpur, India).
-CGPA: 7.8/10.0
-Key Highlight: Sophomore student with 3 patents filed. Specializes in building AI-integrated Full Stack Solutions and RAG Chatbots.
+### PROJECT_MASTER_INDEX
+**Full Project List for Mrigank Singh:**
 
-### PERSONALITY_AND_BIO
-Background: Born and raised in Kanpur, India.
-Academic Journey: Describes himself as "not always the best student, but always excelled in subjects that interested me."
-Computer Science Origin Story: His journey followed a pattern of deep obsession. When first introduced to CS, he didn't just learn it; he learned C programming in-depth to understand the foundational concepts.
-Hobbies & Interests:
-- Sports: Cricket.
-- Gaming: Enjoys video games like BGMI (Battlegrounds Mobile India) and Call of Duty.
-- Philosophy: "Spend time on many different things, but master the things that interest me most."
-- Tagline: "Together? Let's build something."
+**SOLO PROJECTS (Built Individually):**
+1. **MealMatch AI:** A serverless food ordering app using Knapsack algorithms for budget/calorie optimization.
+2. **JobFit:** An AI Agentic pipeline for resume-job matching using LangGraph and Gemini.
+3. **LexiBot:** A RAG-based legal assistant for Indian Law using Intelligent Chunking.
+4. **F&B Process Anomaly Detection:** An industrial ML pipeline using Isolation Forests and Autoencoders.
+5. **Better LinkedIn:** A frontend architectural redesign focusing on performance and UX.
 
-### TECHNICAL_SKILLS
-Languages: C, C++, Java, Python, JavaScript, TypeScript.
-AI_ML_Frameworks: OpenAI API, Google Gemini, DeepSeek, LLaMA, LangChain, LangGraph, TensorFlow, PyTorch, Scikit-learn.
-Vector_Databases: Qdrant, RAG implementations.
-Web_Development: React, Next.js, FastAPI, Flask, Node.js, Tailwind CSS, ShadCN UI, Vite.
-Mobile_Development: Flutter, React Native (Expo).
-Cloud_Infrastructure: AWS S3, CloudFront, Docker, CI/CD, Git, Supabase.
-Data_Science: EDA (Exploratory Data Analysis), Anomaly Detection, SHAP (Explainable AI), Plotly, Time Series Analysis.
+**GROUP PROJECTS (Collaborations):**
+1. **DASES (Descriptive Answer Sheet Evaluation System):** Built with mentors Konal Puri & Aviral Khanna. Mrigank built the Mobile App (React Native) and contributed to Web Frontend.
+2. **UPES Career Services Platform:** Built with Konal Puri & Aviral Khanna. Mrigank built the Frontend (React/Vite) and AI Prompts.
 
-### LEADERSHIP_AND_EXPERIENCE
-Role: Joint Events Head at UPES ACM-W Student Chapter (2025-2026).
-Internship: Social Impact Intern at Shramik Bharti NGO (Kanpur, June-Aug 2024). Worked on grassroots initiatives for education and skill development.
-Events Organized: Co-convener for Prodigy'25 (Annual Techfest). Involved in organizing ACM India Flagship event "Lady Ada" and AICWiC 2025.
+**PATENTS (3 Filed):**
+1. AI-Assisted Terms & Conditions System.
+2. LexiBot (Legal Assistant).
+3. MealMatch AI (Food Optimization).
 
-### PROJECT_1: DASES (Descriptive Answer Sheet Evaluation System)
-**Type:** Group Project (Teammates: Konal Puri, Aviral Khanna - Seniors who mentored Mrigank).
-**Mrigank's Specific Contribution:**
-- Developed the **DASES Mobile App** from scratch using React Native & Expo.
-- Contributed to the WebApp Frontend.
-- Assisted in compiling training datasets for the AI models.
-**Project Summary:** An AI-driven system using OCR and LLMs to grade handwritten descriptive answers 90x faster than manual methods with 98% accuracy.
-**Mobile App Technical Details (Built by Mrigank):**
-- **Locked Exam Mode:** Implements a "High Security" environment. Uses `AppState` listeners to detect if a student switches apps. Violations (>15s background time) auto-submit the exam.
-- **Secure Scanning:** Custom camera interface (VisionKit/LMS) that disables gallery uploads, forcing live capture of answer sheets.
-- **Auth:** Custom `SecureStoreAdapter` to bridge Supabase Auth with the device's encrypted Keychain/Keystore.
-**System Impact:**
-- Reduced grading cost from ₹25/sheet (Cloud) to ₹2/sheet (In-house GPU).
-- Processed 400+ sheets with 95% rubric accuracy.
+### GENERAL_FAQ_AND_FACTS
+**Availability & Contact:**
+- **Status:** Actively seeking **Summer Internships for 2026**. Open to **Remote roles** (if compatible with college hours) and **Domestic Relocation**.
+- **Contact:** Email: `mriganksingh005@gmail.com` | Phone: `+91 82734 37398`
+- **Socials:** LinkedIn: `linkedin.com/in/mrigank005` | GitHub: `github.com/Mrigank005`
+- **Location:** Dehradun/Kanpur, India (Timezone: IST +5:30).
+- **Graduation:** May/June 2028.
 
-### PROJECT_2: UPES Career Services Platform
+**Technical Snapshot:**
+- **Strongest Stack:** React (Frontend) + FastAPI (Backend) + Supabase (DB/Auth).
+- **Languages:** Python, JavaScript, TypeScript. (Uses C/C++ and Java for DSA).
+- **AI/ML:** Gemini API, LangChain, LangGraph, TensorFlow, PyTorch, RAG Pipelines.
+- **Databases:** PostgreSQL, MongoDB, Pinecone, Qdrant, Supabase.
+- **Tools:** Docker, Git, VS Code.
+
+**Current Focus:**
+- **Learning:** Mastering Advanced System Design, Agentic AI Workflows, and Open Source contributions.
+- **Certifications:** Currently pursuing Machine Learning Specialization on DeepLearning.AI.
+- **Hobbies:** Table Tennis, Cricket, Gaming (BGMI), and Music.
+
+### PROJECT_1_DEEP_DIVE: DASES (Flagship Project)
+**Full Name:** Descriptive Answer Sheet Evaluation System
 **Type:** Group Project (Teammates: Konal Puri, Aviral Khanna).
-**Mrigank's Specific Contribution:**
-- Developed the **Frontend (WebApp)** using React, Vite, and Tailwind.
-- Designed the **AI System Prompts** (Llama-2/3) for interview question generation.
-- (Note: Backend architecture and core logic were led by Konal & Aviral).
-**Project Summary:** An internship management platform handling Daily Reflective Reports (DRR), attendance, and standardized assessments.
+**Mrigank's Role:** Built the **Mobile App** from scratch (React Native/Expo) and contributed to Web Frontend.
+**Status:** Mobile App is in final stages; Web App deployed at `dases.esun.solutions`.
+**Summary:** An AI-driven system using OCR and LLMs to grade handwritten descriptive answers 90x faster than manual methods with 98% accuracy.
+**Key Technical Features (Mobile App):**
+- **Locked Exam Mode:** Implemented a "High Security" environment. Uses `AppState` listeners to detect background switching. If a student leaves the app for >15s, the exam auto-submits.
+- **Secure Scanning:** Custom camera interface (VisionKit/LMS) that disables gallery uploads, forcing live capture to prevent cheating.
+- **Auth Persistence:** Built a custom `SecureStoreAdapter` to bridge Supabase Auth with the device's encrypted Keychain/Keystore, solving standard localStorage security risks on mobile.
+**Impact:** Reduced grading cost from ₹25/sheet (Cloud) to ₹2/sheet (In-house GPU).
+
+### PROJECT_2_DEEP_DIVE: LexiBot (AI Legal Assistant)
+**Type:** Solo Project (Patent Filed).
+**Deployed Link:** `lexibot-ai.vercel.app`
+**Summary:** A Telegram chatbot for Indian legal queries (Consumer, Traffic, Harassment law) using RAG.
+**Technical "Flex":**
+- **Intelligent Chunking:** Does NOT use fixed-size chunks. Uses an LLM + Regex pipeline to split documents at logical semantic boundaries (e.g., "Article 21", "Section 4"), preserving legal context.
+- **Infrastructure:** Fully dockerized. Uses a `healthcheck` in Docker Compose to ensure the Qdrant Vector DB is fully ready before the bot application starts.
+- **Memory:** Uses `ConversationBufferWindowMemory` (k=5) to handle follow-up questions ("What is the penalty for *that*?").
+- **Safety:** Prevents hallucinations by strictly grounding answers in retrieved context.
+
+### PROJECT_3_DEEP_DIVE: MealMatch AI
+**Type:** Solo Project (Patent Filed).
+**Deployed Link:** `mealmatch-ai.vercel.app`
+**Summary:** Serverless food ordering app that generates meal combos strictly fitting *both* Budget & Calorie limits.
+**Commercial Potential:** Mrigank believes this has the highest commercial potential due to mass consumer appeal.
+**Technical "Flex":**
+- **Algorithm:** Uses a "Knapsack-style" optimization algorithm with **Heuristic Pruning**. It pre-sorts items by "efficiency" (calories/price) and stops recursion after finding the top 6 combos to prevent UI freezes (solving the O(n³) complexity issue).
+- **Compatibility Matrix:** Implemented a rule-based system to prevent culinary clashes (e.g., ensuring it doesn't suggest Rice + Pasta in the same combo).
+- **Architecture:** Client-side only (Serverless). Logic runs entirely in the browser.
+
+### PROJECT_4_DEEP_DIVE: JobFit (Resume Analyzer)
+**Type:** Solo Project.
+**Deployed Link:** `jobfit-analysis-ai.vercel.app`
+**Summary:** An agentic AI pipeline that screens resumes against job descriptions.
+**Technical "Flex":**
+- **Architecture:** Uses **LangGraph** to model the analysis as a State Machine (Extraction -> Job Analysis -> Profiling -> Compatibility Scoring).
+- **Security:** Implements "Direct-to-S3" uploads using AWS Presigned URLs with 5-minute expiry to bypass server bottlenecks and ensure security.
+- **Handling Hallucinations:** Uses Regex-based JSON extraction (`safe_parse_json`) to clean LLM outputs before rendering.
+
+### PROJECT_5_DEEP_DIVE: F&B Process Anomaly Detection
+**Type:** Solo Project (Industrial ML).
+**Repo:** `github.com/Mrigank005/F-B-Process-Anomaly-Detection-System`
+**Summary:** Industrial ML pipeline to detect defects in food batches (analyzing 1500+ batches across 11 parameters).
+**Technical "Flex":**
+- **Ensemble Model:** Combines 4 algorithms (Isolation Forest, One-Class SVM, Local Outlier Factor, Autoencoder). A batch is flagged only if ≥2 models agree (Consensus Voting).
+- **Explainability:** Integrated **SHAP** (Shapley Additive Explanations) to tell operators exactly *which* sensor (e.g., "Humidity") caused the alarm.
+- **Auto-Thresholding:** The Autoencoder dynamically sets its error threshold based on the 95th percentile of reconstruction error.
+
+### PROJECT_6_DEEP_DIVE: UPES Career Services Platform
+**Type:** Group Project (Teammates: Konal Puri, Aviral Khanna).
+**Mrigank's Role:** Built the Frontend (React/Vite) and designed AI Prompts.
+**Deployed Link:** `upes-samarth-internship.vercel.app`
 **Technical Details:**
 - **Attendance:** Interfaces with `navigator.mediaDevices` to capture live camera frames for attendance verification.
 - **AI Assessments:** Uses "Few-Shot Chain-of-Thought" prompts to synthesize a student's daily reports into tailored interview questions.
-- **UX:** Implemented "Mock" async behavior (simulated latency) to polish the loading states and UI feedback loops before backend integration.
+- **UX:** Implemented "Mock" async behavior (simulated latency) to polish loading states before backend integration.
 
-### PROJECT_3: MealMatch AI
+### PROJECT_7_DEEP_DIVE: Better LinkedIn
 **Type:** Solo Project.
-**Status:** Patent Applied.
-**Summary:** Serverless food ordering app that generates meal combos (Main + Drink + Dessert) strictly fitting specific Budget & Calorie limits.
-**Technical "Flex":**
-- **Algorithm:** Uses a "Knapsack-style" optimization algorithm with **Heuristic Pruning**. It pre-sorts items by "efficiency" (calories/price) and stops recursion after finding the top 6 combos to prevent UI freezes.
-- **Architecture:** Client-side only (Serverless). Logic runs entirely in the browser using static TypeScript data.
-- **Constraint System:** Implements a "Compatibility Matrix" to prevent culinary clashes (e.g., prevents suggesting Rice + Pasta together).
-
-### PROJECT_4: JobFit - AI Resume Analyzer
-**Type:** Solo Project.
-**Summary:** An agentic AI pipeline that screens resumes against job descriptions.
-**Technical "Flex":**
-- **Architecture:** Uses **LangGraph** to model the analysis as a State Machine (Extraction -> Analysis -> Profiling -> Compatibility).
-- **Security:** Implements "Direct-to-S3" uploads using AWS Presigned URLs to bypass server bottlenecks.
-- **Handling Hallucinations:** Uses Regex-based JSON extraction (`safe_parse_json`) to clean LLM outputs before rendering.
-- **Scoring:** Uses a Generative Scoring Engine (LLM as Judge) rather than simple vector similarity.
-
-### PROJECT_5: LexiBot - AI Legal Assistant
-**Type:** Solo Project (Patent Applied).
-**Summary:** A Telegram chatbot for Indian legal queries (RAG-based).
-**Technical "Flex":**
-- **Intelligent Chunking:** Does NOT use fixed-size chunks. Uses an LLM + Regex to split documents at semantic boundaries (Articles, Sections) to preserve legal context.
-- **Infrastructure:** Runs Qdrant (Vector DB) in Docker. Uses a `healthcheck` in Docker Compose to ensure the DB is ready before the bot starts.
-- **Memory:** Uses `ConversationBufferWindowMemory` (k=5) to handle follow-up questions ("What is the penalty for *that*?").
-
-### PROJECT_6: F&B Process Anomaly Detection
-**Type:** Solo Project.
-**Summary:** Industrial ML pipeline to detect defects in food batches.
-**Technical "Flex":**
-- **Ensemble Model:** Combines 4 algorithms (Isolation Forest, One-Class SVM, LOF, Autoencoder). A batch is flagged only if ≥2 models agree (Consensus Voting).
-- **Explainability:** Uses **SHAP** (Shapley Additive Explanations) to tell operators exactly *which* sensor (e.g., "Humidity") caused the alarm.
-- **Auto-Thresholding:** The Autoencoder dynamically sets its error threshold based on the 95th percentile of reconstruction error, adapting to new data automatically.
-
-### PROJECT_7: Better LinkedIn (Frontend Architecture)
-**Type:** Solo Project.
-**Summary:** A clean, high-performance redesign of LinkedIn.
+**Deployed Link:** `better-linked-in.vercel.app`
 **Technical "Flex":**
 - **Performance:** Uses `react-window` for list virtualization (rendering only visible posts) to handle infinite feeds without lag.
 - **Custom Hooks:** Built `useStickySidebar` to mathematically calculate sticky positioning when CSS `position: sticky` fails in complex layouts.
 
-### PATENTS_DETAILED
-Total Patents Filed: 3 (Indian Patent Office)
+### LEADERSHIP_AND_SOFT_SKILLS
+**Leadership:**
+- **Role:** Joint Events Head at UPES ACM-W Student Chapter.
+- **Impact:** Organized 10+ events. Co-Convener for "Prodigy'25" Tech Fest, managing 1400+ participants and introducing 500+ freshers to tech.
+- **Philosophy:** "Everyone wants to be heard and feel like they are contributing to a goal."
+- **Conflict Resolution:** Approaches disagreements by presenting a logical case with supporting reasons.
 
-[PATENT_1]
-Title: AI-Assisted Terms & Conditions Summarization and Real-Time Compliance Guidance System.
-Innovation: A "Real-Time Guidance Layer" (Browser Extension) that warns users *before* they violate a Terms of Service clause (e.g., "Stop! Mass downloading is banned"). Uses an "Action-Clause Mapper" to link UI events to legal text.
+**Internship Experience:**
+- **Shramik Bharti NGO:** Maintained website and internal tools. Gained appreciation for grassroots social impact.
 
-[PATENT_2]
-Title: LexiBot: AI-Powered Legal Assistant.
-Innovation: A "Dynamic Legal Knowledge Graph" specifically for Indian Law. Unlike static bots, it models relationships between statutes (amendments, contradictions) and uses semantic caching to answer repeated queries instantly.
-
-[PATENT_3]
-Title: MealMatch AI.
-Innovation: A "Multi-Constraint Filtering Engine" that solves the "Health vs. Wealth" problem by filtering menus for *both* Calorie Limits and Budget Ceilings simultaneously.
+**Why 7.8 CGPA?**
+- Mrigank prioritized hands-on innovation (building 7+ projects, filing 3 patents) over rote academic memorization.
