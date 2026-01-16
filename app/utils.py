@@ -100,7 +100,7 @@ def get_rag_response(query: str) -> str:
             ],
             config=types.GenerateContentConfig(
                 temperature=0.7,
-                max_output_tokens=500
+                max_output_tokens=1024
             )
         )
         
