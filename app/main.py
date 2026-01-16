@@ -13,7 +13,7 @@ app = FastAPI(
 # CORS Middleware 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://mrigank-portfolio-website.vercel.app", "https://mrigank-portfolio-website.vercel.app/"],
+    allow_origins=["https://mrigank.is-a.dev", "https://mrigank.is-a.dev/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
