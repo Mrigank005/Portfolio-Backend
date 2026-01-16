@@ -9,14 +9,14 @@ A RAG (Retrieval-Augmented Generation) based chatbot API for Mrigank Singh's por
 - **Vector Search**: Uses Pinecone for efficient similarity search over portfolio knowledge base
 - **Google Gemini Integration**: Leverages Gemini 2.0 Flash for responses and embedding generation
 - **CORS Enabled**: Ready for frontend integration from any origin
-- **Production Ready**: Deployed on Render with health check endpoints
+- **Production Ready**: Deployed on Hugging Face Spaces with health check endpoints
 
 ## 📋 Prerequisites
 
 - Python 3.9+
 - Pinecone account and API key
 - Google AI Studio API key
-- (Optional) Render account for deployment
+- (Optional) Hugging Face account for deployment
 
 ## 🛠️ Installation
 
@@ -57,7 +57,6 @@ Portfolio-Backend/
 │   └── knowledge_base.txt   # Portfolio information source
 ├── scripts/
 │   └── ingest.py            # Data ingestion script for Pinecone
-├── render.yaml              # Render deployment configuration
 ├── requirements.txt         # Python dependencies
 └── README.md               # This file
 ```
@@ -154,16 +153,15 @@ Send a message to the chatbot and receive a context-aware response.
 
 ## 🌐 Deployment
 
-This project is configured for deployment on Render. The [render.yaml](render.yaml) file contains the deployment configuration.
+This project is configured for deployment on Hugging Face Spaces.
 
-### Deploy to Render
+### Deploy to Hugging Face Spaces
 
-1. Connect your GitHub repository to Render
-2. Render will automatically detect the `render.yaml` configuration
-3. Add environment variables in Render dashboard:
+1. Connect your GitHub repository to Hugging Face Spaces
+2. Add environment variables in Hugging Face Spaces dashboard:
    - `GOOGLE_API_KEY`
    - `PINECONE_API_KEY`
-4. Deploy!
+3. Deploy!
 
 ## 🔑 Environment Variables
 
